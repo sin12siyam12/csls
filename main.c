@@ -603,6 +603,7 @@ int run_vm(VM *vm) {
 			else {
 				printf("Runtime Error: Unknown instruction %d at address %d!\n",
 					instruction, vm->ip - 1);
+				break;
 			}
 		}
 
